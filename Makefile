@@ -31,7 +31,7 @@ process-data: up
 
 ## Starts jupyter lab
 notebook: up
-	$(DOCKER_COMPOSE_EXEC) jupyter-lab --ip 0.0.0.0 --port 8888 --no-browser
+	$(DOCKER_COMPOSE_EXEC) jupyter-lab --ip 0.0.0.0 --port 8889 --no-browser
 
 ## Sort code using isort
 sort: up
