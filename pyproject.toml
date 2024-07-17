@@ -17,11 +17,13 @@ fsspec = {version = "~=2023.5", extras = ["gcs"]}
 gcsfs = "~=2023.5"
 google-cloud-secret-manager = "~=2.16"
 fastparquet = "~=2023.4"
-dvc = {version = "2.56", extras = ["gdrive", "gs"]}
+dvc = {version = "2.58.2", extras = ["gdrive", "gs"]}
 dask = {version = "~=2023.5", extras = ["complete"]}
 distributed = "~2023.5"
 dask-cloudprovider = {version = "2022.10", extras = ["gcp"]} 
 dask-ml = "~=2023.3"
+bokeh = "~=3.5"
+pygit2 = "~=1.14.1"
 
 
 

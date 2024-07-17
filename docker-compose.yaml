@@ -7,6 +7,8 @@ services:
     image: cybulde-data-preparation
     platform: linux/amd64
     container_name: cybulde-data-preparation-container
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=./creds/gcp-101-426822-bed637fa9578.json
     build:
       context: .
       dockerfile: ./docker/Dockerfile
@@ -21,5 +23,3 @@ services:
 
     ipc: host
     init: true
-
-
