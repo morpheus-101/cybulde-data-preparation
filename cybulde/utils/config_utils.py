@@ -15,7 +15,8 @@ from omegaconf import DictConfig, OmegaConf
 from cybulde.utils.io_utils import open_file
 from functools import partial
 import os
-from cybulde.config_schemas import data_processing_config_schema
+from cybulde.config_schemas import data_processing_config_schema, tokenizer_training_config_schema
+
 
 
 def get_config(config_path: str, config_name: str) -> TaskFunction:
@@ -51,6 +52,7 @@ def load_pickle_config(config_path: str, config_name: str) -> Any:
 
 def setup_config() -> None:
     data_processing_config_schema.setup_config()
+    tokenizer_training_config_schema.setup_config()
 
 
 def setup_logger() -> None:
