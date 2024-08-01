@@ -37,4 +37,4 @@ tokenizer:
   pad_token: '[PAD]'
   mask_token: '[MASK]'
 docker_image_name: us-east1-docker.pkg.dev/gcp-101-426822/cyber-bul-del/cybulde-data-preparation
-docker_image_tag: 9A6C257B-514E-439B-9323-FC42319C6C0C
+docker_image_tag: CA621323-6A31-45A2-AFD2-480496A64FBF

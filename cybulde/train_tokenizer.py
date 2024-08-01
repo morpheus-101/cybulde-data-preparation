@@ -24,20 +24,20 @@ def train_tokenizer(config: TokenizerTrainingConfig) -> None:
     logger = get_logger(Path(__file__).name)
 
     data_parquet_path = config.data_parquet_path
-    text_column_name = config.text_column_name
+    # text_column_name = config.text_column_name
 
-    tokenizer = instantiate(config.tokenizer, _convert_="all")
+    # tokenizer = instantiate(config.tokenizer, _convert_="all")
 
     logger.info("Reading dataset...")
-    df = pd.read_parquet(data_parquet_path)
+    # df = pd.read_parquet(data_parquet_path)
 
     logger.info("Starting training...")
-    tokenizer.train(df[text_column_name].values)
+    # tokenizer.train(df[text_column_name].values)
 
     logger.info("Saving tokenizer...")
 
     tokenizer_save_dir = os.path.join(os.path.dirname(data_parquet_path), "trained_tokenizer")
-    tokenizer.save(tokenizer_save_dir)
+    # tokenizer.save(tokenizer_save_dir)
 
     docker_info = {"docker_image": config.docker_image_name, "docker_tag": config.docker_image_tag}
     docker_info_save_path = os.path.join(tokenizer_save_dir, "tokenizer_training_docker_info.yaml")
