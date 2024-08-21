@@ -42,5 +42,5 @@ This processed dataset is later used to build a tokenizer using the tokenizers l
 - This setup enhances reproducibility by packaging the transformation functions and dataset version within the Docker container. Experiments can be traced back to the Docker image used to deploy the Dask cluster, providing detailed information on the configuration used for data processing.
 
 <div style="text-align: center;">
-  <img src="pictures/dask_setup.png" alt="My Image" width="70%" height="auto">
+  <img src="pictures/dask_setup.png" alt="My Image" width="100%" height="auto">
 </div>
