@@ -26,6 +26,6 @@ This repository includes code for Part 2 only.
 # Part 2:
 
 ## Key Tools and Technologies
-**Dask**
-**GCP instance**
-**HuggingFace tokenizers**
+- **Dask**
+- **GCP instance**
+- **HuggingFace tokenizers**
